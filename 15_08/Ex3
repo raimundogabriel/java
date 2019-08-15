@@ -1,0 +1,57 @@
+package ex3;
+import java.util.Scanner;
+
+public class Ex3 {
+    
+    public static void main(String[] args) {
+    
+        Scanner s = new Scanner(System.in);
+        int i, f, x;
+        float m;
+        System.out.println("Entre com os limites dos intervalos:");        
+        i = s.nextInt();
+        f = s.nextInt();
+        m = (float)(i+f)/2;
+        if(i<f){
+            x=i;
+            while(x<f){
+                if(x%2==0){
+                    System.out.println(x);
+                }
+                x++;
+            }
+        }
+        else{
+            x=f;
+            while(x<i){
+                if(x%2==0){
+                    System.out.println(x);
+                }
+                x++;
+            }
+        }
+        System.out.printf("a media do inicio e fim do intervalo é %.2f\n",m);
+        
+        //SOLUTION 2
+        if(i<f){
+           
+            for(x=i;x<f;x++){
+                if(x%2==0){
+                    System.out.println(x);
+                }
+                
+            }
+        }
+        else{
+            for(x=f;x<i;x++){
+                if(x%2==0){
+                    System.out.println(x);
+                }
+            }
+        }
+        System.out.printf("a media do inicio e fim do intervalo é %.2f\n",m);
+
+        
+    }
+    
+}
