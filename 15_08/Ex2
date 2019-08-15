@@ -1,0 +1,47 @@
+import java.util.Scanner;
+
+public class Ex2 {
+    
+    public static void main(String[] args) {
+    
+        Scanner s = new Scanner(System.in);
+        int n, i, f;
+        System.out.println("Entre com os limites dos intervalos:");        
+        i = s.nextInt();
+        f = s.nextInt();
+        
+        System.out.println("entre agora com o valor para saber se ele esta no intervalo");
+        n = s.nextInt();
+        if(i<f){
+            if(n>i){
+                if(n<f){
+                    System.out.printf("O numero %d esta no meio do intervalo", n);
+                }
+                else{
+                    System.out.printf("O numero %d esta depois do intervalo", n);
+                }
+
+            }
+            else{
+                System.out.printf("O numero %d esta antes do intervalo", n);
+            }
+        }
+        else{
+            if(n>f){
+                if(n<i){
+                    System.out.printf("O numero %d esta no meio do intervalo", n);
+                }
+                else{
+                    System.out.printf("O numero %d esta depois do intervalo", n);
+                }
+
+            }
+            else{
+                System.out.printf("O numero %d esta antes do intervalo", n);
+            }
+        }
+        
+        
+    }
+    
+}
