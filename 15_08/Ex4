@@ -1,0 +1,36 @@
+package ex10;
+import java.util.Scanner;
+
+public class Ex10 {
+    
+    public static void main(String[] args) {
+    
+        Scanner s = new Scanner(System.in);
+        int i;
+        boolean x;
+        float m;
+        x=true;
+        i=0;
+        m=0;
+        System.out.println("Entre com as notas dos alunos e quando não tiver mais digite 0");        
+        while(x!=false){
+            x= s.nextBoolean();
+                    
+            m+= s.nextFloat();
+            i++;
+        }
+        
+        //outro
+        
+//        soma Notas = 0; 
+//        for (int i=1; int <=n;){
+//            System.out.printf("Nota do aluno %d: ",i);
+//            nota=t.nextFloat();
+//            if(teste de se a nota esta valida){
+//            adiciona na média
+//        
+//        }
+//        }
+    }
+    
+}
